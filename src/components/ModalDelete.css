@@ -1,0 +1,4 @@
+.modal-items {
+    @apply flex items-center absolute top-1/2 left-1/2;
+    transform: translate(-50%, -50%);
+}

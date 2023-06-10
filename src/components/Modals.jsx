@@ -44,6 +44,7 @@ const Modals = ({ closeModals, onSubmit, defaulValue }) => {
             setError("Ukuran file tidak boleh lebih dari 100kb")
             return false
         } else {
+            setError("")
             setFormState({
                 ...formState,
                 [e.target.name]: URL.createObjectURL(e.target.files[0])

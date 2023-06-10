@@ -6,7 +6,9 @@ import Dashboard from './components/Dashboard'
 import TableData from './components/TableData'
 import Modals from './components/Modals'
 import ModalDelete from './components/ModalDelete';
-import image1 from './assets/images/pixel1.png'
+import image1 from './assets/images/burger.png'
+import image2 from './assets/images/cake.png'
+import image3 from './assets/images/trophy.png'
 
 function App() {
   const [openModal, setOpenModal] = useState(false)
@@ -14,7 +16,7 @@ function App() {
   const [dataBarang, setDataBarang] = useState([
       {
           id: 1,
-          namaBarang: 'Frozen yoghurt',
+          namaBarang: 'Beef Burger',
           hargaBeli: 100000,
           hargaJual: 200000,
           stok: 100,
@@ -23,28 +25,21 @@ function App() {
       },
       {
           id: 2,
-          namaBarang: 'Ice cream sandwich',
+          namaBarang: 'Birthday Cake',
           hargaBeli: 100000,
           hargaJual: 200000,
           stok: 100,
-          uploadImage: image1
+          uploadImage: image2
       },
       {
           id: 3,
-          namaBarang: 'Eclair',
+          namaBarang: 'Winner Trophy',
           hargaBeli: 100000,
           hargaJual: 200000,
           stok: 100,
-          uploadImage: image1
+          uploadImage: image3
       },
-      {
-          id: 4,
-          namaBarang: 'Cupcake',
-          hargaBeli: 100000,
-          hargaJual: 200000,
-          stok: 100,
-          uploadImage: image1
-      }
+
   ])
   const [dataBarangUpdate, setDataBarangUpdate] = useState(null)
   const [deleteId, setDeleteId] = useState("")
